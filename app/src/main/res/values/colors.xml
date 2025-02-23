@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#D3D3D3</color> <!-- สีเทาอ่อน -->
+    <color name="red">#FF0000</color>
+    <color name="dark_gray">#707070</color>
+
+    <!-- เพิ่มสีเนื้อ -->
+    <color name="beige">#FAE4A8</color> <!-- สีเนื้ออ่อน -->
+    <color name="skin_tone">#EACDA3</color> <!-- สีเนื้อกลาง -->
+    <color name="tan">#D2A679</color> <!-- สีเนื้อเข้ม -->
 </resources>

@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "scisrc.mobiledev.ecommercelayout"
-        minSdk = 24
+        minSdk = 24  // ลด minSdk เพื่อรองรับอุปกรณ์เก่าขึ้น
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -26,19 +26,31 @@ android {
             )
         }
     }
+
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17  // อัปเดตเป็น Java 17
+        targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"  // อัปเดตให้รองรับ JVM 17
     }
+
     buildFeatures {
         viewBinding = true
     }
 }
 
 dependencies {
+    // ✅ เพิ่ม ViewPager2
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+
+    // ✅ เพิ่ม CircleIndicator3
+    implementation("me.relex:circleindicator:2.1.6")
+
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+    // ของเดิม
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

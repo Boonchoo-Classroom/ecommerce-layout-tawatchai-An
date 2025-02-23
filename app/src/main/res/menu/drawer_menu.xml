@@ -1,9 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- หมวดหมู่: เมนูหลัก -->
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home"
-            android:title="Home" />
+            android:title="หน้าหลัก"
+            app:iconSize="24dp"
+            app:iconTint="@color/black"
+            app:showAsAction="ifRoom"/>
+
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@drawable/ic_products"
+            android:title="รายการสินค้า"
+            app:iconSize="24dp"
+            app:iconTint="@color/black"
+            app:showAsAction="ifRoom"/>
+
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_cart"
+            android:title="ตะกร้าสินค้า"
+            app:iconSize="24dp"
+            app:iconTint="@color/black"
+            app:showAsAction="ifRoom"/>
+    </group>
+
+    <!-- หมวดหมู่: บัญชี -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="โปรไฟล์"
+            app:iconSize="24dp"
+            app:iconTint="@color/black"
+            app:showAsAction="ifRoom"/>
+
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorites"
+            android:title="รายการโปรด"
+            app:iconSize="24dp"
+            app:iconTint="@color/black"
+            app:showAsAction="ifRoom"/>
     </group>
 </menu>
